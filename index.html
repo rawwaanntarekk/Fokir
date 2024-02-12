@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fokir - Personal Portoflio</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/all.min.css">
     <link rel="stylesheet" href="CSS/Styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+3:wght@200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="CSS/all.min.css">
 
 </head>
 
@@ -19,82 +20,110 @@
     <!-- Start Home section  -->
     <div id="home">
         <div class="black_layer"></div>
-        <div class="navContainer">
-            <div class="logo">
-                <a href="index.html">Fokir</a>
-            </div>
 
-            <div class="navBar">
-                <i class="fa-solid fa-bars hidden"></i>
-                <ul>
-                    <li><a href="#home" class="colored"> Home</a></li>
-                    <li><a href="#about"> About</a></li>
-                    <li><a href="#service"> Services</a></li>
-                    <li><a href="#portfolio"> Portfolio</a></li>
-                    <li><a href="#testimonial"> Testimonial</a></li>
-                    <li><a href="#blog"> Blog</a></li>
-                    <li><a href="#contact"> Contact</a></li>
-                </ul>
-                <div class="clr-fix"></div>
+        <nav class="navbar navbar-expand-sm navbar-light bg-transparent  ">
+            <div class="container">
+                <a class="navbar-brand text-white colored fs-2" href="#">Fokir</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-white" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-white" href="#service">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-white" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-white" href="#testimonial">Testimonial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-white" href="#blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-white" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
             </div>
-        </div>
+        </nav>
+
 
         <div class="mainText">
             <h3>Hello i'm</h3>
             <h1 class="Capatilized">Alex Smith</h1>
-            <h4>Professional Web Designer</h4>
+            <h4>Professional Web <span id="element"></span> </h4>
         </div>
     </div>
     <!-- End Home section -->
 
     <!-- Start About section -->
     <div id="about">
-        <div class="container">
-            <div class="about-image">
-                <div class="inner">
-                    <img src="Images/about.jpg" alt="Person">
+        <div class=" container">
+            <div class="content row">
+                <div class="about-image col-sm-12 mb-sm-5 col-md-5 col-lg-5 position-relative ">
+                    <img src="Images/about.jpg" class="w-100" alt="Person">
                 </div>
+                <div class="about-text col-sm-12 col-md-7 ">
+                    <div class="Inner w-100">
+                        <div class="heading mb-md-4">
+                            <h2 class="Capatilized">Hello,</h2>
+                        </div>
 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporincididunt
+                            utlabore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris
+                            nisi
+                            ut
+                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                            velit
+                            esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                            sunt
+                            in
+                            culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
 
-            </div>
-            <div class="about-text">
-                <div class="Inner">
-                    <div class="heading">
-                        <h2 class="Capatilized">Hello,</h2>
+                        <ul class="col-sm-12 row mb-5 ">
+                            <div class="col-sm-6">
+                                <li class="mb-1"><strong class="text-dark pe-1 ">Name:</strong> Rdam smith</li>
+                                <li class="mb-1"><strong class="text-dark pe-1">Age:</strong> 26 Year</li>
+                                <li class="mb-1"><strong class="text-dark pe-1">Freelance:</strong> Available</li>
+                            </div>
+                            <div class="col-sm-6">
+                                <li class="mb-1"><strong class="text-dark pe-1">Job Title:</strong> UI/UX Designer</li>
+                                <li class="mb-1"><strong class="text-dark pe-1">Location:</strong> United States, US
+                                </li>
+                                <li class="mb-1"><strong class="text-dark pe-1">E-mail:</strong> example@gmail.com</li>
+                        </ul>
+                        <button href=""><a href="">Download CV</a></button>
+                        <button href=""><a href="">Hire Me </a></i></button>
+
                     </div>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                        ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    <ul>
-                        <div class="col">
-                            <li><span>Name:</span> Rdam smith</li>
-                            <li><span>Age:</span> 26 Year</li>
-                            <li><span>Freelance:</span> Available</li>
-                        </div>
-                        <div class="col">
-                            <li><span>Job Title:</span> UI/UX Designer</li>
-                            <li><span>Location:</span> United States, US</li>
-                            <li><span>E-mail:</span> example@gmail.com</li>
-                    </ul>
-                    <button href=""><a href="">Download CV</a></button>
-                    <button href=""><a href="">Hire Me </a></i></button>
-
                 </div>
-
             </div>
+
         </div>
+    </div>
+    </div>
     </div>
     <!-- End About section  -->
 
     <!-- Start Our Service section -->
     <div id="services">
-        <div class="container">
+        <div class="blockcontainer">
             <div class="heading">
                 <h2>Our Services</h2>
                 <div class="lines">
@@ -156,7 +185,7 @@
 
     <!-- Start Portfolio section -->
     <div id="portfolio">
-        <div class="container">
+        <div class="blockcontainer">
             <div class="heading">
                 <h2>Our Portfolio</h2>
                 <div class="lines">
@@ -212,7 +241,7 @@
 
     <!-- Start statistics  section -->
     <div id="stat">
-        <div class="container">
+        <div class="blockcontainer">
             <div class="statistic">
                 <div class="stat">
                     <i class="fa-solid fa-user-group"></i>
@@ -241,7 +270,7 @@
 
     <!-- Start Feedback section -->
     <div id="feedback">
-        <div class="container">
+        <div class="blockcontainer">
             <div class="heading">
                 <h2>Client's Feedback</h2>
                 <div class="lines">
@@ -251,7 +280,7 @@
                 </div>
             </div>
             <div class="feedback-box">
-                <div class="rounded-image">
+                <div class="rounded-image ms-sm-2">
                     <img src="Images/feedback.jpg" alt="person">
                 </div>
                 <div class="inner">
@@ -274,12 +303,12 @@
                     </div>
 
                 </div>
-                
+
             </div>
             <div class="scroll-button">
                 <div class="rounded-rectangle"></div>
-                <div class="circle"></div>
-               
+                <div class="circle ms-sm-3 ms-lg-0"></div>
+
             </div>
         </div>
     </div>
@@ -287,7 +316,7 @@
 
     <!-- Start Blog section -->
     <div id="Blog">
-        <div class="container">
+        <div class="blockcontainer">
             <div class="heading">
                 <h2>Our Blog</h2>
                 <div class="lines">
@@ -303,7 +332,8 @@
                         <div class="inner">
                             <p>23 November, 2015</p>
                             <h2><a href="">Web Design Blog Post</a></h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ea, quis magnam
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ea, quis
+                                magnam
                                 deserunt eius incidunt repellat molestiae.</p>
                             <a href="">Read More</a>
                         </div>
@@ -316,7 +346,8 @@
                         <div class="inner">
                             <p>20 April, 2018</p>
                             <h2><a href="">Development Blog Post</a></h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ea, quis magnam
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ea, quis
+                                magnam
                                 deserunt eius incidunt repellat molestiae.</p>
                             <a href="">Read More</a>
                         </div>
@@ -329,7 +360,8 @@
                         <div class="inner">
                             <p>17 May, 2017</p>
                             <h2><a href="">Full Width Blog Post</a></h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ea, quis magnam
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ea, quis
+                                magnam
                                 deserunt eius incidunt repellat molestiae.</p>
                             <a href="">Read More</a>
                         </div>
@@ -343,7 +375,7 @@
 
     <!-- Start Contact us section -->
     <div id="contact">
-        <div class="container">
+        <div class="blockcontainer">
             <div class="heading">
                 <h2>Contact Us</h2>
                 <div class="lines">
@@ -374,7 +406,7 @@
     <!-- End Contact us section -->
 
     <div id="footer">
-        <div class="container">
+        <div class="blockcontainer">
             <div class="social">
                 <a href=""><i class="fa-brands fa-facebook-f"></i></a>
                 <a href=""><i class="fa-brands fa-twitter"></i></a>
@@ -385,6 +417,17 @@
         </div>
     </div>
 
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- typed js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Developer', 'Designer'],
+            typeSpeed: 150,
+            loop: true
+        });
+    </script>
 
 
 </body>
