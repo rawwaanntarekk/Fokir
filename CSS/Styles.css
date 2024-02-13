@@ -273,7 +273,6 @@ button:hover {
     transition-duration: 0.4s;
     top: 100%;
 }
-
 .layer i {
     color: white !important;
     cursor: pointer;
@@ -289,24 +288,20 @@ button:hover {
 
 /* Responsive adjustments */
 
-@media (max-width:992px) {
+@media (max-width:1199px){
     #about .about-text button {
         width: 35% !important;
     }
-
     #about .about-image {
         margin-bottom: .925rem;
     }
-
     #about .about-text p {
-        margin-top: 1.8rem;
+        margin-top:1.8rem ;
     }
-
     #about .about-text .Inner {
-        padding: 5% 0rem !important;
+        padding:5% 0rem !important;
     }
 }
-
 @media (min-width:1200px) {
     #about .about-image::before {
         display: block;
@@ -639,7 +634,7 @@ button:hover {
     padding: 1.5%;
     float: left;
     width: calc(100% / 3);
-
+   
 }
 
 #portfolio .image {
@@ -658,7 +653,7 @@ button:hover {
     content: '';
     width: 100%;
     height: 100%;
-    top: 0;
+    top:0;
     opacity: 0;
     background-color: rgba(0, 0, 0, 0.2);
     transition-duration: 0.4s;
@@ -1153,7 +1148,7 @@ button:hover {
 
 /* Large screen*/
 
-@media (min-width: 769px) and (max-width: 991px) {
+@media (min-width: 769px) and (max-width: 1500px) {
     #feedback .container {
         width: 90%;
     }
